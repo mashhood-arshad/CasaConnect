@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Price Range -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price Range" />
+
+        <EditText
+            android:id="@+id/minPriceEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Min Price"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/maxPriceEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Max Price"
+            android:inputType="number" />
+
+        <!-- Bedrooms -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Bedrooms" />
+
+        <EditText
+            android:id="@+id/bedEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Min Bedrooms"
+            android:inputType="number" />
+
+        <!-- Bathrooms -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Bathrooms" />
+
+        <EditText
+            android:id="@+id/bathEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Min Bathrooms"
+            android:inputType="number" />
+
+        <!-- Location (optional spinner or text) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Location" />
+
+        <EditText
+            android:id="@+id/locationSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:inputType="text" />
+
+        <!-- Apply -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/applyFilterBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/orange_bg"
+            android:textColor="@color/white"
+            android:text="Apply Filter" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/removeFilterBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/orange_bg"
+            android:textColor="@color/white"
+            android:text="Remove Filter" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

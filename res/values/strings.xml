@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">CasaConnect</string>
+    <string name="perfect_choice_nfor_you_future">Perfect choice\nFor you future</string>
+    <string name="type_prompt">Select property type</string>
+    <string name="Garage">Garage\n</string>
+    <string name="Size_Type">Size Type</string>
+    <string-array name="property_types">
+        <item>House</item>
+        <item>Apartment</item>
+        <item>Villa</item>
+        <item>Plot</item>
+    </string-array>
+    <string-array name="garageYN">
+        <item>Garage Yes</item>
+        <item>Garage No</item>
+    </string-array>
+    <string-array name="size_types">
+        <item>Sq. ft</item>
+        <item>Marla</item>
+        <item>Kanal</item>
+        <item>Acres</item>
+    </string-array>
+    <string-array name="Options">
+        <item>Cost</item>
+        <item>Percent</item>
+    </string-array>
+    <string-array name="titles">
+    <item>For Sale</item>
+    <item>For Rent</item>
+    </string-array>
+</resources>

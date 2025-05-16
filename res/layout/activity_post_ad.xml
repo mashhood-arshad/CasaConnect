@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.post_ad">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:fillViewport="true"
+            android:overScrollMode="always">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_ls"
+                android:paddingBottom="32dp">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="43dp"
+                    android:text="Ad Detail"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!-- Title -->
+                <Spinner
+                    android:id="@+id/title_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="54dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="64dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:prompt="@string/Garage"
+                    android:spinnerMode="dropdown"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView19" />
+
+                <!-- Address -->
+                <EditText
+                    android:id="@+id/add_text"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="54dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="64dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:hint="address"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title_txt" />
+
+                <!-- Bed -->
+                <EditText
+                    android:id="@+id/bed_txt"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="54dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:hint="bed"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/add_text" />
+
+                <!-- Bath -->
+                <EditText
+                    android:id="@+id/bath_txt"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="64dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:hint="Bath"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/add_text" />
+
+                <!-- Size -->
+                <EditText
+                    android:id="@+id/size_txt"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="54dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:hint="Size"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/bed_txt" />
+
+                <Spinner
+                    android:id="@+id/size_txt2"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="54dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:prompt="@string/Size_Type"
+                    android:spinnerMode="dropdown"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/size_txt" />
+
+                <Spinner
+                    android:id="@+id/gragetxt"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="64dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:prompt="@string/Garage"
+                    android:spinnerMode="dropdown"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/bath_txt" />
+
+                <Spinner
+                    android:id="@+id/typeltxt"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="64dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:prompt="@string/type_prompt"
+                    android:spinnerMode="dropdown"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gragetxt" />
+
+                <EditText
+                    android:id="@+id/desctxt"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="54dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="64dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:hint="Description"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/typeltxt" />
+
+                <EditText
+                    android:id="@+id/pricee_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="54dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="64dp"
+                    android:background="@drawable/bg_edit_text"
+                    android:hint="Price"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/desctxt" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+        <!-- Bottom Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/img_button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@color/white"
+                android:text="Upload Images"
+                android:textColor="@color/orange"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/done_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="64dp"
+                android:layout_marginRight="64dp"
+                android:background="@color/orange"
+                android:text="Done"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
